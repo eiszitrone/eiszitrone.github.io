@@ -19,6 +19,12 @@ jQuery(document).ready(function($) {
 				$(current_item).addClass( 'active' );
 				var new_section = $( $(current_item).attr('href') );
 				new_section.fadeIn( section_show_time );
+
+				// to fix scrollbar moving bug
+				if ($('body').width() >= 768) {
+					var swidth=(window.innerWidth-$(window).width());
+					$('.dropdown-menu').css('margin-left', swidth / 2+ 'px');
+				}
 			} );
 		}
 		return false;
