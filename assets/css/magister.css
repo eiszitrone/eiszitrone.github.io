@@ -1,0 +1,276 @@
+html {
+	/*background:#505D6E url(../images/body4.jpg) no-repeat center center fixed;*/
+	min-height:100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+body {
+	background:transparent;
+	min-height:100%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.8;
+	font-size:14px;
+	font-family: Lato, sans-serif;;
+	color:#333;
+	font-weight: normal;
+}
+
+
+
+/********************************************************/
+/*                    Navigation bar                    */
+/********************************************************/
+.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+@media (min-width: 768px) {
+	.mainmenu { position: fixed; }
+}
+
+.navbar-toggle {
+	position:relative;
+	float:left;
+	display:block;
+	padding: 9px 10px;
+	background: rgba(0, 0, 0, 0.12);
+	background-image: none;
+	border: 0 none;
+	top:0px;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+	        float: left;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+	background: #333;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+.open .navbar-toggle {
+	top:-70px;
+	opacity: 0;
+}
+.mainmenu .dropdown-menu {
+	top: -14em;
+	left: 0px;
+	font-size: 13px;
+	padding:0;
+	background:none;
+	border:0 none;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display:block;
+	opacity:0;
+	-webkit-transition: all .45s;
+	   -moz-transition: all .45s;
+	        transition: all .45s;
+}
+.mainmenu .dropdown-menu .active {
+	font-weight:bold;
+}
+.mainmenu .open .dropdown-menu {
+	top:2px;
+	opacity:1;
+}
+.mainmenu .dropdown-menu a {
+	padding:10px 10px;
+	margin:0;
+	color:#000;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+.mainmenu .dropdown-menu a:hover {
+	background:rgba(0,0,0,.1);
+	color:#000;
+	padding:10px 8px 10px 12px;
+}
+
+
+
+/********************************************************/
+/*             Sections - universal classes             */
+/********************************************************/
+.section {
+	z-index: 1;
+	min-height:420px;
+	width: 100%;
+	overflow:auto;
+	height:100%;
+	padding-top:100px;
+	padding-bottom:50px;
+	display:none;
+	top:0;
+}
+@media (min-width: 768px) {
+	.section { padding-top:160px;}
+}
+
+/* Show one of sections */
+#projects {
+	display: block;
+}
+
+
+/********************************************************/
+/*                      Typography                      */
+/********************************************************/
+/*a { color:#333; text-decoration: none; }
+a:hover, a:active { color:#000; text-decoration: underline; }*/
+.lead {
+	font-weight:normal;
+	font-size:1.5em;
+	line-height:1.2em;
+}
+@media (max-width: 767px) {
+	.lead {
+		font-size:1.3em;
+	}
+}
+
+
+/********************************************************/
+/*                   UI - Buttons                       */
+/********************************************************/
+.btn{
+	color:#333;
+}
+.btn:hover {
+	color:#000;
+}
+.btn-lg {
+	padding:16px 30px;
+	font-size:inherit;
+}
+
+
+
+/********************************************************/
+/*                 Everything else                      */
+/********************************************************/
+
+.list-social .btn {
+	font-size:1.3em;
+}
+.list-social .btn:hover, .list-social .btn:active, .list-social .btn:focus {
+	text-decoration: none;
+}
+
+/***********************************************************/
+/*                   Hello page                            */
+/***********************************************************/
+
+.hello {
+	font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 460px;
+}
+
+/***********************************************************/
+/*                   About page                            */
+/***********************************************************/
+.about {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.about h1, h2, h3, h4{
+	margin-top: 0;
+}
+
+.date {
+	font-size: 14px;
+}
+.field {
+	font-weight: bold;
+}
+.degree {
+	margin-left: 22px;
+}
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: 0;
+		position: relative;
+	}
+	.strike-through span {
+		position: absolute;
+		background: #fff;
+	}
+	.strike-through span:first-child {
+		top: -12px;
+		padding-right: 20px;
+		font-weight: bold;
+	}
+
+	.strike-through span.date {
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+
+	.gpa {
+		float: right;
+	}
+}
+
+@media (max-width: 480px) {
+	.strike-through span {
+    display: block;
+	}
+	.strike-through span:first-child {
+    margin-bottom: 7px;
+	}
+}
+
+.position {
+	font-weight: bold;
+  margin-bottom: 8px;
+}
+.institue {
+	position: relative;
+	top: -10px;
+}
+
+.about section {
+	margin-bottom: 30px;
+}
+.about li {
+	line-height: 1.8;
+}
+
+/***********************************************************/
+/*                   Projects page                         */
+/***********************************************************/
+
+.projects {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.projects section {
+	margin-bottom: 40px;
+}
+
+.projects .title {
+	/*color: #307699;*/
+}
+.technology span {
+	font-weight: bold;
+}
