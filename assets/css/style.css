@@ -24,7 +24,7 @@ body {
 /********************************************************/
 /*                    Navigation bar                    */
 /********************************************************/
-.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+.mainmenu { z-index: 10; width:100%;  padding: 30px 0 0 0;}
 @media (min-width: 768px) {
 	.mainmenu { position: fixed; }
 }
@@ -273,4 +273,15 @@ a:hover, a:active { color:#000; text-decoration: underline; }*/
 }
 .technology span {
 	font-weight: bold;
+}
+
+.thumb img {
+	width: 100%;
+	height: 100%;
+}
+.thumb {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 4px;
+	margin-bottom: 20px;
 }

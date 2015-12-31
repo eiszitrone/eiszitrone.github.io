@@ -19,6 +19,9 @@
 	<!-- Fonts -->
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+
+	<link href="assets/vendor/zoom.js-master/css/zoom.css" rel="stylesheet">
+
 </head>
 
 
@@ -246,127 +249,227 @@
 	</div>
 </section>
 
+
 <!-- Third (Projects) section -->
 <section class="section" id="projects">
 	<div class="container projects">
 		<section>
-			<h4>UCLA VC Fund project</h4>
-			<div class="description">Help with software development to support other people's job, built a web app with two functionalities up to now.</div>
-			<ul class="highlights">
-				<li>
-					Scrape https://angel.co to find newly added ucla related startups within 2 weeks.
-				</li>
-				<li>
-					Provide a search interface to search Form S-1 using ucla as search input.
-				</li>
-			</ul>
-			<div class="link"><a href="http://ec2-52-32-83-104.us-west-2.compute.amazonaws.com:3000" target="_blank">demo</a></div>
-			<div class="technology">
-				<span>Technologies Used</span>:  MongoDB, Node.js, AngularJS, express.js, PhantomJS, AngelList API
-			</div>
-		</section>
-
-		<section>
-			<h4 class="title">A second-hand items trading website</h4>
-			<div class="description">
-				A course project of CS219 Scalable Internet Service. <br>A twitter like website where instead of 'tweet' a 140-character messages, you 'tweet' a second-hand item, and people following you can order it.
-			</div>
-			<ul class="highlights">
-				<li>
-					Combining second-hand trading website with social networking wetbsite
-				</li>
-				<li>
-					Application logics including signin, login, post, comment, followship and trading system.
-				</li>
-				<li>
-					Scale the website with client-side caching, server-side caching, deployed on Amazon AWS
-				</li>
-			</ul>
-			<div class="link">
-				<a href="https://github.com/scalableinternetservices/boiling-crab" target="_blank">code</a>
-				 |
-				<a href="https://docs.google.com/document/d/17v4Zrct0hr3VZMW_vfCHRgDX6KUAQ5VNFywIKmvQHks/edit?usp=sharing" target="_blank">report</a>
-			</div>
-			<div class="technology">
-				<span>Technologies Used</span>:  Ruby On Rails, Amazon AWS, client-side caching, server-side caching
-			</div>
-		</section>
-
-		<section>
-			<h4 class="title">Baidu Institute of Front-End Technology (IFE)</h4>
-			<div class="description">
-				Baidu, Inc. is a Chinese web services company. IFE aims at helping university students learn front-end web technologies. Through this 3 month course, I have worked out serval projects.
-			</div>
-			<ul class="highlights">
-				<li>
-					Basic HTML, CSS mockup practice
-					<div class="link"><a href="/task1" target="_blank">demo</a></div>
-				</li>
-				<li>
-					JavaScript learning, DOM, BOM learning. Inplemented a simple version <b>JQuery</b> which supports selectors,  event binding interface, ajax interface.
-					<div class="link"><a href="https://github.com/eiszitrone/ife/blob/master/task/task0002/work/eiszitrone/js/util.js" target="_blank">code</a></div>
-				</li>
-				<li>
-					Final project: an evernote like single page application implemented using pure HTML, CSS, JavaScript, using local storage for data persistence
-					<br>
-					Funcionalities include create/delete folder, create/update/delete task, label task as completed.
-					<div class="link">
-						<a href="/task3" target="_blank">demo</a> |
-						<a href="https://github.com/eiszitrone/ife/tree/master/task/task0003/eiszitrone" target="_blank">code</a>
+			<div class="row">
+				<div class="col-sm-9">
+						<h4>UCLA VC Fund project</h4>
+						<div class="description">Help with software development to support other people's job, built a web app with two functionalities up to now.</div>
+						<ul class="highlights">
+							<li>
+								Scrape https://angel.co to find newly added ucla related startups within 2 weeks.
+							</li>
+							<li>
+								Provide a search interface to search Form S-1 using ucla as search input.
+							</li>
+						</ul>
+						<div class="link"><a href="http://ec2-52-32-83-104.us-west-2.compute.amazonaws.com:3000" target="_blank">demo</a></div>
+						<div class="technology">
+							<span>Technologies Used</span>:  MongoDB, Node.js, AngularJS, express.js, PhantomJS, AngelList API
+						</div>
+				</div>
+				<!-- pictures -->
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/ucla-vc-fund1.png" data-action="zoom" >
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/ucla-vc-fund2.png" data-action="zoom">
+							</div>
+						</div>
 					</div>
-				</li>
-			</ul>
-			<div class="technology">
-				<span>Technologies Used</span>: HTML, CSS, JavaScript
+				</div>
 			</div>
 		</section>
 
 		<section>
-			<h4 class="title">MouthKeeper</h4>
-			<div class="description">
-				A course project of CS239 Health Analytics. Developed an IOS app called MouthKeeper which can automatically detect if the user is eating in a restaurant and if it is a fast food restaurant. The app will keep track of the eating places and
-				alert the user if he has been eating to many fast food recently.
-			</div>
-			<ul class="highlights">
-				<li>
-					Use Core Location framework to get user’s location every 5 minutes
-				</li>
-				<li>
-					Use Google Places API to retrieve nearby places, set types=food to retrieve restaurant, use parameter types=food and keyword="fast food restaurant" to retrieve fast food restaurants
-				</li>
-				<li>
-					If the distance from the user to the place is less than a certain limit(10m), the user is considered as being in the restaurant.
-				</li>
-			</ul>
-			<div class="link">
-				<a href="http://slides.com/ziqiangshi/deck-2-4" target="_blank">slide</a>
-			</div>
-			<div class="technology">
-				<span>Technologies Used</span>: Objective-C
+			<div class="row">
+				<div class="col-sm-9">
+					<h4 class="title">A second-hand items trading website</h4>
+					<div class="description">
+						A course project of CS219 Scalable Internet Service. <br>A twitter like website where instead of 'tweet' a 140-character messages, you 'tweet' a second-hand item, and people following you can order it.
+					</div>
+					<ul class="highlights">
+						<li>
+							Combining second-hand trading website with social networking wetbsite
+						</li>
+						<li>
+							Application logics including signin, login, post, comment, followship and trading system.
+						</li>
+						<li>
+							Scale the website with client-side caching, server-side caching, deployed on Amazon AWS
+						</li>
+					</ul>
+					<div class="link">
+						<a href="https://github.com/scalableinternetservices/boiling-crab" target="_blank">code</a>
+						 |
+						<a href="https://docs.google.com/document/d/17v4Zrct0hr3VZMW_vfCHRgDX6KUAQ5VNFywIKmvQHks/edit?usp=sharing" target="_blank">report</a>
+					</div>
+					<div class="technology">
+						<span>Technologies Used</span>:  Ruby On Rails, Amazon AWS, client-side caching, server-side caching
+					</div>
+				</div>
+
+				<!-- pictures -->
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/boiling-crab1.png" data-action="zoom">
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/boiling-crab2.png" data-action="zoom">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section>
-			<h4 class="title">eBay Auction Search Web Site</h4>
-			<div class="description">
-				A course project of CS144 web development.
+			<div class="row">
+				<div class="col-sm-9">
+					<h4 class="title">Baidu Institute of Front-End Technology (IFE)</h4>
+					<div class="description">
+						Baidu, Inc. is a Chinese web services company. IFE aims at helping university students learn front-end web technologies. Through this 3 month course, I have worked out serval projects.
+					</div>
+					<ul class="highlights">
+						<li>
+							Basic HTML, CSS mockup practice
+							<div class="link"><a href="/task1" target="_blank">demo</a></div>
+						</li>
+						<li>
+							JavaScript learning, DOM, BOM learning. Inplemented a simple version <b>JQuery</b> which supports selectors,  event binding interface, ajax interface.
+							<div class="link"><a href="https://github.com/eiszitrone/ife/blob/master/task/task0002/work/eiszitrone/js/util.js" target="_blank">code</a></div>
+						</li>
+						<li>
+							Final project: an evernote like single page application implemented using pure HTML, CSS, JavaScript, using local storage for data persistence
+							<br>
+							Funcionalities include create/delete folder, create/update/delete task, label task as completed.
+							<div class="link">
+								<a href="/task3" target="_blank">demo</a> |
+								<a href="https://github.com/eiszitrone/ife/tree/master/task/task0003/eiszitrone" target="_blank">code</a>
+							</div>
+						</li>
+					</ul>
+					<div class="technology">
+						<span>Technologies Used</span>: HTML, CSS, JavaScript
+					</div>
+				</div>
+
+				<!-- pictures -->
+
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/IFE.png" data-action="zoom">
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumb">
+								<img src="assets/images/IFE2.png" data-action="zoom">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<ul class="highlights">
-				<li>
-					Given a large volume of data downloaded from the eBay web site and stored in XML files, examined the data and designed a good relational schema to store it in Mysql database.
-				</li>
-				<li>
-					Implemented search functions to this data, both keyword-based search over text fields and search for items located within a geographic regions using Apache Lucene text search engine, then publish the Java search functions as Web services using Axis2 library and Tomcat.
-				</li>
-				<li>
-					Built web site for end user using Java servlet and JSP, integrated Google Maps and Google Suggestions for better user experience.
-				</li>
-				<li>
-					Enabled SSL on Tomcat for secure transaction over credit card information, and used session to store information in server side.
-				</li>
-			</ul>
-			<div class="technology">
-				<span>Technologies Used</span>: Java Servlet, JSP
+		</section>
+
+		<section>
+			<div class="row">
+				<div class="col-sm-9">
+					<h4 class="title">MouthKeeper</h4>
+					<div class="description">
+						A course project of CS239 Health Analytics. Developed an IOS app called MouthKeeper which can automatically detect if the user is eating in a restaurant and if it is a fast food restaurant. The app will keep track of the eating places and
+						alert the user if he has been eating to many fast food recently.
+					</div>
+					<ul class="highlights">
+						<li>
+							Use Core Location framework to get user’s location every 5 minutes
+						</li>
+						<li>
+							Use Google Places API to retrieve nearby places, set types=food to retrieve restaurant, use parameter types=food and keyword="fast food restaurant" to retrieve fast food restaurants
+						</li>
+						<li>
+							If the distance from the user to the place is less than a certain limit(10m), the user is considered as being in the restaurant.
+						</li>
+					</ul>
+					<div class="link">
+						<a href="http://slides.com/ziqiangshi/deck-2-4" target="_blank">slide</a>
+					</div>
+					<div class="technology">
+						<span>Technologies Used</span>: Objective-C
+					</div>
+				</div>
+
+				<!-- pictures -->
+				<div class="col-sm-3">
+					<div class="row">
+						<div class="col-xs-6 col-sm-8">
+							<div class="thumb">
+								<img src="assets/images/MK1.png" data-action="zoom">
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-8">
+							<div class="thumb">
+								<img src="assets/images/MK2.png" data-action="zoom">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="row">
+				<div class="col-sm-9">
+					<h4 class="title">eBay Auction Search Web Site</h4>
+					<div class="description">
+						A course project of CS144 web development.
+					</div>
+					<ul class="highlights">
+						<li>
+							Given a large volume of data downloaded from the eBay web site and stored in XML files, examined the data and designed a good relational schema to store it in Mysql database.
+						</li>
+						<li>
+							Implemented search functions to this data, both keyword-based search over text fields and search for items located within a geographic regions using Apache Lucene text search engine, then publish the Java search functions as Web services using Axis2 library and Tomcat.
+						</li>
+						<li>
+							Built web site for end user using Java servlet and JSP, integrated Google Maps and Google Suggestions for better user experience.
+						</li>
+						<li>
+							Enabled SSL on Tomcat for secure transaction over credit card information, and used session to store information in server side.
+						</li>
+					</ul>
+					<div class="technology">
+						<span>Technologies Used</span>: Java Servlet, JSP
+					</div>
+				</div>
+				<!-- pictures -->
+				<!-- <div class="col-sm-3">
+					<div class="row">
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumbnail">
+								<img src="assets/images/body1.jpg">
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-12">
+							<div class="thumbnail">
+								<img src="assets/images/body1.jpg">
+							</div>
+						</div>
+					</div>
+				</div> -->
 			</div>
 		</section>
 
@@ -401,5 +504,7 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 <!-- Custom template scripts -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/transition.js"></script>
+<script src="assets/vendor/zoom.js-master/dist/zoom.js"></script>
 </body>
 </html>
